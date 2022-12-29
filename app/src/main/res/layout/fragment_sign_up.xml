@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darker_blue"
+        android:paddingBottom="40dp"
+        tools:context=".SignUpFragment">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Nome completo"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SignUpTitle" />
+
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Data de nascimento"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/cpf"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="CPF"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthDate" />
+
+        <EditText
+            android:id="@+id/rg"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="RG"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cpf" />
+
+        <EditText
+            android:id="@+id/cep"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="CEP"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Endereço"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cep" />
+
+        <EditText
+            android:id="@+id/neighbourhood"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Bairro"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Cidade"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neighbourhood" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Estado"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city" />
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="País"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="299dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country" />
+
+        <EditText
+            android:id="@+id/emailSignUp"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+        <Button
+            android:id="@+id/signUp2"
+            android:layout_width="215dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="Cadastrar"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailSignUp" />
+
+        <TextView
+            android:id="@+id/SignUpTitle"
+            android:layout_width="309dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="15dp"
+            android:text="Cadastro"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

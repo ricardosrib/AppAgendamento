@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darker_blue"
+        android:paddingBottom="40dp"
+        tools:context=".HomeFragment">
+
+
+        <TextView
+            android:id="@+id/easyCleanId"
+            android:layout_width="241dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="50dp"
+            android:text="Limpeza leve"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="270dip"
+            android:layout_height="160dip"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/limpeza_leve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/easyCleanId" />
+
+        <TextView
+            android:id="@+id/mediumCleanId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Limpeza média"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+
+        <ImageButton
+            android:id="@+id/mediumClean"
+            android:layout_width="270dip"
+            android:layout_height="160dip"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/limpeza_media"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mediumCleanId" />
+
+        <TextView
+            android:id="@+id/heavyCleanId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Limpeza pesada"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mediumClean" />
+
+        <ImageButton
+            android:id="@+id/heavyClean"
+            android:layout_width="270dip"
+            android:layout_height="160dip"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/limpeza_pesada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heavyCleanId" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="350dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="15dp"
+            android:text="Selecione o nível de limpeza que deseja realizar:"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
