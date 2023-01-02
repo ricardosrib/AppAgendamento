@@ -29,7 +29,7 @@
             app:layout_constraintTop_toBottomOf="@+id/question" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/lightClean"
             android:layout_width="270dip"
             android:layout_height="160dip"
             android:layout_marginTop="8dp"
@@ -50,7 +50,7 @@
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+            app:layout_constraintTop_toBottomOf="@+id/lightClean" />
 
         <ImageButton
             android:id="@+id/mediumClean"
