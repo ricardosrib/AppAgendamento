@@ -12,10 +12,14 @@ import androidx.navigation.NavArgs
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.appagendamento.model.User
+import com.example.appagendamento.viewmodel.ViewModel
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private val args : LoginFragmentArgs by navArgs()
+
+//    private lateinit var user: User
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -37,19 +41,26 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             }
 
 
-//            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
-
-//            val data = args.userdata
-
-//            for (i in data) {
-//                Toast.makeText(getActivity(), i.toString(), Toast.LENGTH_SHORT).show()
+//            if (loginValidation(login, password)) {
+//                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+//            } else {
+//                view?.findViewById<EditText>(R.id.email)?.text?.clear()
+//                view?.findViewById<EditText>(R.id.password)?.text?.clear()
+//                Toast.makeText(getActivity(), "Login ou senha incorretos", Toast.LENGTH_SHORT).show()
 //            }
+
+
         }
 
         buttonSignUp.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
         }
     }
+
+//    fun loginValidation(login: String, password: String): Boolean {
+//        return login == user.loginData.email && password == user.loginData.password
+//    }
+
 
     fun loginValidation(login: String, password: String): Boolean {
         val data = args.userdata

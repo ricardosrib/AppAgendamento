@@ -11,8 +11,13 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.appagendamento.model.Login
+import com.example.appagendamento.model.User
 
 class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
+
+//    private lateinit var userData: User
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -23,14 +28,12 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
             val action = SignUpFragmentDirections.actionSignUpFragmentToLoginFragment(data)
             findNavController().navigate(action)
 
-
-//            for (i in data) {
-//                Toast.makeText(getActivity(), i.toString(), Toast.LENGTH_SHORT).show()
-//            }
-
+//            userData = User(view?.findViewById<EditText>(R.id.name)?.text.toString(), view?.findViewById<EditText>(R.id.birthDate)?.text.toString(), view?.findViewById<EditText>(R.id.cpf)?.text.toString(), view?.findViewById<EditText>(R.id.rg)?.text.toString(), view?.findViewById<EditText>(R.id.cep)?.text.toString(), view?.findViewById<EditText>(R.id.address)?.text.toString(), view?.findViewById<EditText>(R.id.neighbourhood)?.text.toString(), view?.findViewById<EditText>(R.id.city)?.text.toString(), view?.findViewById<EditText>(R.id.state)?.text.toString(), view?.findViewById<EditText>(R.id.country)?.text.toString(), view?.findViewById<EditText>(R.id.phoneNumber)?.text.toString(), Login(view?.findViewById<EditText>(R.id.emailSignUp)?.text.toString(), view?.findViewById<EditText>(R.id.password)?.text.toString()))
 //            findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
+
         }
     }
+
 
     fun getData(): ArrayList<String> {
         val list = ArrayList<String>()

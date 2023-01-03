@@ -31,12 +31,12 @@
 
         <ImageButton
             android:id="@+id/lightClean"
-            android:layout_width="270dip"
-            android:layout_height="160dip"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/limpeza_leve"
+            android:layout_width="150dip"
+            android:layout_height="135dip"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/light_cleaning"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.582"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/easyCleanId" />
 
@@ -44,7 +44,7 @@
             android:id="@+id/mediumCleanId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="45dp"
             android:text="Limpeza média"
             android:fontFamily="@font/convergence"
             android:textAlignment="center"
@@ -56,10 +56,10 @@
 
         <ImageButton
             android:id="@+id/mediumClean"
-            android:layout_width="270dip"
-            android:layout_height="160dip"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/limpeza_media"
+            android:layout_width="150dip"
+            android:layout_height="135dip"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/medium_cleaning"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
             android:id="@+id/heavyCleanId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="45dp"
             android:text="Limpeza pesada"
             android:fontFamily="@font/convergence"
             android:textAlignment="center"
@@ -82,10 +82,10 @@
 
         <ImageButton
             android:id="@+id/heavyClean"
-            android:layout_width="270dip"
-            android:layout_height="160dip"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/limpeza_pesada"
+            android:layout_width="150dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/heavy_cleaning"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
