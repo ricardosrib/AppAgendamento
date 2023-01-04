@@ -1,5 +1,6 @@
 package com.example.appagendamento
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,7 +18,7 @@ import com.example.appagendamento.viewmodel.ViewModel
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
-    private val args : LoginFragmentArgs by navArgs()
+//    private val args : LoginFragmentArgs by navArgs()
 
 //    private lateinit var user: User
 
@@ -57,13 +58,23 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         }
     }
 
+    fun loginValidation(login: String, password: String): Boolean {
+        val sharedPrefEmail = activity?.getSharedPreferences("sharedPreferencesFile", Context.MODE_PRIVATE)?.getString("email", null)
+        val sharedPrefPassword = activity?.getSharedPreferences("sharedPreferencesFile", Context.MODE_PRIVATE)?.getString("password", null)
+
+        return login == sharedPrefEmail && password == sharedPrefPassword
+    }
+
+
 //    fun loginValidation(login: String, password: String): Boolean {
 //        return login == user.loginData.email && password == user.loginData.password
 //    }
 
 
-    fun loginValidation(login: String, password: String): Boolean {
-        val data = args.userdata
-        return login == data[11] && password == data[12]
-    }
+//    fun loginValidation(login: String, password: String): Boolean {
+//        val data = args.userdata
+//
+//        return login == data[11] && password == data[12]
+//    }
 }
+
