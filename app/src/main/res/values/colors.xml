@@ -10,5 +10,6 @@
     <color name="light_blue">#73C1FF</color>
     <color name="darker_blue">#005395</color>
     <color name="soft_purple">#4A4FCA</color>
+    <color name="pastel_purple">#6D55FF</color>
     <color name="gold">#F8D04F</color>
 </resources>

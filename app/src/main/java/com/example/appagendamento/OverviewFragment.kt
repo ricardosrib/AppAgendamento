@@ -6,11 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 
 class OverviewFragment : Fragment(R.layout.fragment_overview) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val okButton = view?.findViewById<Button>(R.id.ok)
 
         val serviceType = view?.findViewById<TextView>(R.id.serviceType)
         val date = view?.findViewById<TextView>(R.id.date2)
@@ -21,5 +25,9 @@ class OverviewFragment : Fragment(R.layout.fragment_overview) {
         date?.text = activity?.getSharedPreferences("shared_preferences_add_info", Context.MODE_PRIVATE)?.getString("cleaning_date", null)
         time?.text = activity?.getSharedPreferences("shared_preferences_add_info", Context.MODE_PRIVATE)?.getString("cleaning_time", null)
         address?.text = activity?.getSharedPreferences("shared_preferences_add_info", Context.MODE_PRIVATE)?.getString("cleaning_address", null)
+
+        okButton?.setOnClickListener {
+            findNavController().navigate(R.id.action_overviewFragment_to_profileFragment)
+        }
     }
 }
